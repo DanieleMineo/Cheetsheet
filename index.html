@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/danielemineo/Projects/CODECADEMY/html-css-cheatsheet-starting/resources/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Semantic HTML</title>
+</head>
+<body>
+    <h1>Semantic HTML</h1>
+    <article>
+        <h2>Why use Semantic HTML?</h2>
+        <p>There are 3 main reasons for using a sematic HTML language:</p>
+        <ul>
+            <li><span class="Accessibility">Accessibility:</span> Semantic HTML makes webpages accessible for mobile devices and for people with disabilities as well. This is because screen readers and browsers are able to interpret the code better.</li>
+            <li><span class="SEO">SEO:</span> It improves the website SEO, or Search Engine Optimization, which is the process of increasing the number of people that visit your webpage. With better SEO, search engines are better able to identify the content of your website and weight the most important content appropriately.</li>
+            <li><span class="Easy">Easy to understand:</span> Semantic HTML also makes the website’s source code easier to read for other web developers.</li>
+        </ul>
+    </article>
+    <h2 class="Table1">Summary Table tags</h2>
+  <main>
+   <table>
+    <thead class="Tags">
+        <tr>
+            <th scope="col">Tag</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>    
+        <tr class="Header">
+            <th scope="row">&lt;header&gt;</th>
+            <td scope="row">Header</td>
+            <td scope="row">It's usually used as a container for the navigation links to the page or, more generally, for an introductory content.</td>
+        </tr>
+        <tr class="Nav">
+            <th scope="row">&lt;nav&gt;</th>
+            <td scope="row">Nav</td>
+            <td scope="row">Is used to define a block of navigation links such as menus and tables of contents.</td>
+        </tr>
+        <tr class="Main">
+            <th scope="row">&lt;main&gt;</th>
+            <td scope="row">Main</td>
+            <td scope="row">Is used to encapsulate the dominant content within a webpage. By using &lt;main&gt as opposed to a &lt;div&gt element, screen readers and web browsers are better able to identify that whatever is inside of the tag is the bulk of the content.</td>
+        </tr>
+        <tr class="Footer">
+            <th scope="row">&lt;footer&gt;</th>
+            <td scope="row">Footer</td>
+            <td scope="row">The content at the bottom of the subject information is known as the footer, indicated by the &lt;footer&gt element. The footer contains information such as: Contact information, Copyright information, Terms of use, Site Map, Reference to top of page links</td>
+        </tr>
+        <tr class="Section">
+            <th scope="row">&lt;section&gt;</th>
+            <td scope="row">Section</td>
+            <td scope="row">Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.</td>
+        </tr>
+        <tr class="Article">
+            <th scope="row">&lt;article&gt;</th>
+            <td scope="row">Article</td>
+            <td scope="row">The &lt;article&gt element holds content that makes sense on its own. &lt;article&gt can hold content such as articles, blogs, comments, magazines, etc. An &lt;article&gt tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends.</td>
+        </tr>
+        <tr class="Aside">
+            <th scope="row">&lt;aside&gt;</th>
+            <td scope="row">Aside</td>
+            <td scope="row">The &lt;aside&gt element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such as &lt;article&gt or &lt;section&gt. Some common uses of the &lt;aside&gt element are for: Bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars, Additional information.</td>
+        </tr>
+        <tr class="Figure">
+            <th scope="row">&lt;figure&gt;</th>
+            <td scope="row">Figure</td>
+            <td scope="row">Figure is an element used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.</td>
+        </tr>
+        <tr class="Figcaption">
+            <th scope="row">&lt;figcaption&gt;</th>
+            <td scope="row">Figcaption</td>
+            <td scope="row">&lt;figcaption&gt; is an element used to describe the media in the &lt;figure&gt; tag. Usually, &lt;figcaption&gt; will go inside &lt;figure&gt;. This is different than using a &lt;p&gt; element to describe the content; if we decide to change the location of &lt;figure&gt;, the paragraph tag may get displaced from the figure while a &lt;figcaption&gt; will move with the figure. This is useful for grouping an image with a caption.</td>
+        </tr>
+        <tr class="Audio">
+            <th scope="row">&lt;audio&gt;</th>
+            <td scope="row">Audio</td>
+            <td scope="row">The &lt;audio&gt element is used to embed audio content into a document. Although not always necessary, it’s recommended that we state the type of audio as it helps the browser identify it more easily and determine if that type of audio file is supported by the browser.</td>
+        </tr>
+        <tr class="Video">
+            <th scope="row">&lt;video&gt;</th>
+            <td scope="row">Video</td>
+            <td scope="row">The &lt;video&gt element is used to embed videos content into a document.</td>
+        </tr>
+        <tr class="Embed">
+            <th scope="row">&lt;embed&gt;</th>
+            <td scope="row">Embed</td>
+            <td scope="row">The &lt;embed&gt; element can embed any media content including videos, audio files, and gifs from an external source. This means that websites that have an embed button have some form of media content that can be added to other websites. The &lt;embed&gt; tag is a self-closing tag, unlike the &lt;video&gt; element. Note that &lt;embed&gt; is a deprecated tag and other alternatives, such as &lt;video&gt;, &lt;audio&gt; and &lt;img&gt;, should be used in its place, but is being taught for legacy purposes. Embed can be used to add local files as well as media content straight from some other websites.</td>
+        </tr>
+ </table>
+    <h2 class="Table2">Summary Table Attributes</h2>
+    <p>The following table refers to the attributes that can be assigned to elements: &lt;audio&gt, &lt;video&gt and &lt;embed&gt. There are multiple attributes that refer to the aforementioned elements, I will limit myself to reporting the main ones.</p>
+    <table>
+        <thead class="Attributes">
+            <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+            <tr class="Src">
+                <th><span class="code">src</span></th>
+                <td scope="row">Search</td>
+                <td scope="row">Specifies the URL of the audio file. Example: &lt;audio&gt; &lt;source src="iAmAnAudioFile.mp3" type="audio/mp3"&gt;&lt;/source&gt;&lt;/audio&gt;. In this example, we created an &lt;audio&gt; element. Then we created a &lt;source&gt; element to encapsulate our audio link. In this case, iAmAnAudioFile.mp3 is our audio file.</td>
+            </tr>
+            <tr class="Type">
+                <th><span class="code">type</span></th>
+                <td scope="row">Type</td>
+                <td scope="row">Is used for specified the type by using type and named what kind of audio it is.</td>
+            </tr> 
+            <tr class="Controls">
+                <th><span class="code">controls</span></th>
+                <td scope="row">Controls</td>
+                <td scope="row">When added in, a play/pause button will be added onto the video along with volume control and a fullscreen option.</td>
+            </tr> 
+            <tr class="Autoplay">
+                <th><span class="code">autoplay</span></th>
+                <td scope="row">Autoplay</td>
+                <td scope="row">The attribute which results in a video automatically playing as soon as the page is loaded.</td>
+            </tr> 
+            <tr class="Loop">
+                <th><span class="code">loop</span></th>
+                <td scope="row">Loop</td>
+                <td scope="row">This attribute results in the video continuously playing on repeat.</td>
+            </tr>
+
+        </main>
+     </table> 
+     <br>
+     <br>
+
+     <footer>
+         Create as a project in the Web Development career on <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">CODECADEMY</a> <br>
+        by <a href="https://www.codecademy.com/profiles/_Damn_" target="_blank" rel="noopener noreferrer">Daniele Mineo</a>, April 2022 ©.
+     </footer>
+
+
+</body>
+</html>
